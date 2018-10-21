@@ -1,19 +1,1 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="hpagecss2.css">
-</head>
-<body>
-	
-	<div id="header1" style="background-color: #d8afb1;">
-		<img id="kk" src="Katrina.png">
-	</div>
-	
-	<a href="info.html" class="button"><span> Click to View </span></a>
-		
-	
-	
-</body>
-</html>
