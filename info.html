@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="infocss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+		<div id="header2" style="background-color: #d8afb1;">
+			<img id="coverphoto" src="wiw.png">
+		</div>
+		<div class="tab">
+		<button class="tablinks" onmouseover="resume(event, 'Home')">Home</button>
+		<button class="tablinks" onmouseover="resume(event, 'AboutMe')">About Me</button>
+		<button class="tablinks" onmouseover="resume(event, 'Contact')">Contact</button>
+		<button class="tablinks" onmouseover="resume(event, 'AskMe')">Ask Me</button>
+		<button class="tablinks" onmouseover="resume(event, 'Portfolio')">Portfolio</button>
+		</div>
+		
+		<div id="Home" class="tabcontent">
+			<div class = "avatar">
+				<img src="dp2.jpg">
+			</div>
+			<h1><b> Katrina Navarro Amistad <b></h1>
+			<h4> Future Flight Attendant </h4>
+			<img class="gif" src="airplane.jpg">
+			
+		</div>
+
+		<div id="AboutMe" class="tabcontent">
+			<img src="volleyball.png" <p> Volleyball Player </p>
+			<img src="cake.png" <p> 21 Years Old </p>
+			<img src="female.png" <p> Female </p>
+			<img src="portfolio.png" <p> Former Spes Clerk @Pamantasan Lungsod ng Pasig</p>
+			
+		</div>
+
+		<div id="Contact" class="tabcontent">
+			<img src="smartphone.png" <p> 0936-870-1209 </p>
+			<img src="facebook.png"><a href="https://www.facebook.com/knamistad" >https://www.facebook.com/knamistad</a><br>
+			<img src="twitter.png"><a href="https://twitter.com/knamistad" >https://twitter.com/knamistad</a><br>
+			<img src="instagram.png"><a href="https://www.instagram.com/knamistad/" >https://www.instagram.com/knamistad/</a>
+		</div>
+		
+		<div id="AskMe" class="tabcontent">
+		
+		</div>
+		
+		<div id="Portfolio" class="tabcontent">
+		
+		</div>
+		<div class="clearfix"></div>
+
+		<script>
+function resume(evt, contents) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(contents).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+     
+</body>
+</html>
